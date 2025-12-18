@@ -1,1 +1,0 @@
-# Lastivka_zdo_
