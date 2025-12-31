@@ -3,27 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ЗДО «Садочок Ластівка»</title>
 
-<!-- 🔍 GOOGLE SEO -->
-<title>ЗДО «Садочок Ластівка» — офіційний сайт</title>
-
-<meta name="description" content="Офіційний сайт ЗДО «Садочок Ластівка» м. Овруч. Новини, фотоальбоми, групи, розклад, педагогічний колектив, документи.">
-
-<meta name="keywords" content="ЗДО Ластівка, Садочок Ластівка Овруч, дитячий садок Овруч">
-<meta name="author" content="ЗДО «Садочок Ластівка»">
-<meta name="language" content="uk">
-
-<meta name="robots" content="index, follow">
-<meta name="googlebot" content="index, follow">
-
-<!-- 🌐 Open Graph -->
-<meta property="og:title" content="ЗДО «Садочок Ластівка» — офіційний сайт">
-<meta property="og:description" content="Офіційний сайт дитячого садочка «Ластівка» м. Овруч">
-<meta property="og:type" content="website">
-<meta property="og:locale" content="uk_UA">
-
-<!-- 🔐 Google Search Console -->
-<meta name="google-site-verification" content="ТУТ_ТВІЙ_КОД_ВІД_GOOGLE">
+<!-- Google Search Console -->
+<meta name="google-site-verification" content="L3aMoZRFZU0pbWwUjJfPDd5h7hcqdM3p3z4dfj7Qqo4" />
 
 <style>
 body{margin:0;font-family:Arial;background:#f4fdf7}
@@ -41,6 +24,7 @@ button.saveBtn{background:#27ae60;color:#fff;padding:8px 12px;border:none;border
 footer{text-align:center;padding:15px;background:#eee}
 .hidden{display:none}
 
+/* login */
 .modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);justify-content:center;align-items:center}
 .modal-content{background:#fff;padding:20px;border-radius:10px;width:300px}
 .modal-content input{width:100%;padding:8px;margin:10px 0}
@@ -56,76 +40,68 @@ footer{text-align:center;padding:15px;background:#eee}
 </header>
 
 <nav>
-<button onclick="openTab('home');location.hash='home'">Головна</button>
-<button onclick="openTab('news');location.hash='news'">Новини</button>
-<button onclick="openTab('album');location.hash='album'">Фотоальбом</button>
-<button onclick="openTab('groups');location.hash='groups'">Групи</button>
-<button onclick="openTab('schedule');location.hash='schedule'">Розклад</button>
-<button onclick="openTab('collective');location.hash='collective'">Педколектив</button>
-<button onclick="openTab('inclusive');location.hash='inclusive'">Інклюзія</button>
-<button onclick="openTab('statut');location.hash='statut'">Статут</button>
-<button onclick="openTab('orders');location.hash='orders'">Накази</button>
-<button class="admin hidden" onclick="openTab('attestation');location.hash='attestation'">Атестація</button>
-<button class="admin hidden" onclick="openTab('admin');location.hash='admin'">Адмінка</button>
+<button onclick="openTab('home')">Головна</button>
+<button onclick="openTab('news')">Новини</button>
+<button onclick="openTab('album')">Фотоальбом</button>
+<button onclick="openTab('groups')">Групи</button>
+<button onclick="openTab('schedule')">Розклад</button>
+<button onclick="openTab('collective')">Педколектив</button>
+<button onclick="openTab('inclusive')">Інклюзія</button>
+<button onclick="openTab('statut')">Статут</button>
+<button onclick="openTab('orders')">Накази</button>
+<button class="admin hidden" onclick="openTab('attestation')">Атестація</button>
+<button class="admin hidden" onclick="openTab('admin')">Адмінка</button>
 </nav>
 
-<script>
-let isAdmin=false;
-
-function openTab(id){
-document.querySelectorAll('.section').forEach(s=>s.classList.remove('active'));
-const el=document.getElementById(id);
-if(el) el.classList.add('active');
-}
-
-window.addEventListener("load",()=>{
-const tab=location.hash.replace("#","");
-if(tab) openTab(tab);
-});
-
-function openLogin(){document.getElementById('login').style.display='flex'}
-function addEditor(id){
-if(!isAdmin) return;
-const sec=document.getElementById(id);
-const t=document.createElement('textarea');
-t.value=localStorage.getItem(id)||"";
-const b=document.createElement('button');
-b.className="saveBtn";
-b.innerText="Зберегти";
-b.onclick=()=>{localStorage.setItem(id,t.value);alert("Збережено")};
-sec.appendChild(t);sec.appendChild(b);
-}
-</script>
-
-<!-- ВКЛАДКИ -->
-<div id="home" class="section active"><div class="card"><h2>Головна</h2></div></div>
-<div id="news" class="section"><div class="card"><h2>Новини</h2><iframe src="https://drive.google.com/embeddedfolderview?id=1zooffQ541chkyuKTUul2nkPjJDwirvxQ#list"></iframe></div></div>
-<div id="album" class="section"><div class="card"><h2>Фотоальбом</h2><iframe src="https://drive.google.com/embeddedfolderview?id=1IknDuijQtf-RrgZ8PtK89K1W2_tWz6xU#grid"></iframe></div></div>
-<div id="groups" class="section"><div class="card"><h2>Групи</h2><iframe id="groupFrame"></iframe></div></div>
-<div id="schedule" class="section"><div class="card"><h2>Розклад</h2><iframe src="https://drive.google.com/embeddedfolderview?id=1WiA4RmGSrRH29CbrXg14df5JtuYd6TeJ#list"></iframe></div></div>
-<div id="collective" class="section"><div class="card"><h2>Педколектив</h2><iframe src="https://drive.google.com/embeddedfolderview?id=1Fwu64LsLkIeybCPFTni-_5DgFPvtBMp7#grid"></iframe></div></div>
-<div id="inclusive" class="section"><div class="card"><h2>Інклюзія</h2><iframe src="https://drive.google.com/embeddedfolderview?id=10Q-sd76LpOaqeMxjuyNNYUhFwHMz3lRK#list"></iframe></div></div>
-<div id="statut" class="section"><div class="card"><h2>Статут</h2><iframe src="https://drive.google.com/embeddedfolderview?id=1fJZhnr-yTZ5Uecl4jdnkuSEDhleSx0dz#list"></iframe></div></div>
-<div id="orders" class="section"><div class="card"><h2>Накази</h2><iframe src="https://drive.google.com/embeddedfolderview?id=1ANR6bzU3viTLAgj2NSY-n6JfDlzs_9mS#list"></iframe></div></div>
-<div id="attestation" class="section"><div class="card"><h2>Атестація</h2></div></div>
-<div id="admin" class="section"><div class="card"><h2>Адмінка</h2></div></div>
-
-<footer>© ЗДО «Садочок Ластівка»</footer>
-
-<div id="login" class="modal">
-<div class="modal-content">
-<input id="loginInput" placeholder="Email або код">
-<button onclick="
-if(loginInput.value==='lisovectana370@gmail.com'){
-isAdmin=true;
-document.querySelectorAll('.admin').forEach(e=>e.classList.remove('hidden'));
-['home','news','album','groups','schedule','collective','inclusive','statut','orders','attestation'].forEach(addEditor);
-alert('Адмін');
-login.style.display='none';
-}else alert('Невірно');
-">Увійти</button>
+<!-- Вкладки -->
+<div id="home" class="section active">
+<div class="card">
+<h2>Ласкаво просимо!</h2>
+<p>Офіційний сайт ЗДО «Садочок Ластівка»</p>
 </div>
 </div>
 
-</body>
-</html>
+<div id="news" class="section">
+<div class="card">
+<h2>Новини та документи</h2>
+<iframe src="https://drive.google.com/embeddedfolderview?id=1zooffQ541chkyuKTUul2nkPjJDwirvxQ#list"></iframe>
+</div>
+</div>
+
+<div id="album" class="section">
+<div class="card">
+<h2>Фотоальбом</h2>
+<iframe src="https://drive.google.com/embeddedfolderview?id=1IknDuijQtf-RrgZ8PtK89K1W2_tWz6xU#grid"></iframe>
+</div>
+</div>
+
+<div id="groups" class="section">
+<div class="card">
+<h2>Групи</h2>
+<select onchange="loadGroup(this.value)">
+<option value="ZIRO">Зірочки</option>
+<option value="KRAP">Краплинки</option>
+<option value="SONE">Сонечко</option>
+<option value="SONY">Соняшник</option>
+<option value="PIZ">Пізнайко</option>
+<option value="CHOM">Чомусики</option>
+<option value="VES">Веселка</option>
+<option value="BDZ">Бджілки</option>
+</select>
+<iframe id="groupFrame"></iframe>
+</div>
+</div>
+
+<div id="schedule" class="section">
+<div class="card">
+<h2>Розклад занять</h2>
+<iframe src="https://drive.google.com/embeddedfolderview?id=1WiA4RmGSrRH29CbrXg14df5JtuYd6TeJ#list"></iframe>
+</div>
+</div>
+
+<div id="collective" class="section">
+<div class="card">
+<h2>Педагогічний колектив</h2>
+<iframe src="https://drive.google.com/embeddedfolderview?id=1Fwu64LsLkIeybCPFTni-_5DgFPvtBMp7#grid"></iframe>
+</div>
+</div>
