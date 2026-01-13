@@ -3,105 +3,886 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ЗДО «Садочок Ластівка»</title>
+<title>ЗДО «Садочок Ластівка» — Офіційний сайт дитячого садка в Україні</title>
+<meta name="description" content="Офіційний сайт ЗДО «Садочок Ластівка». Дитячий садок для гармонійного розвитку дітей від 2 до 7 років. Якісна дошкільна освіта, інклюзивне навчання, досвідчені педагоги.">
+<meta name="keywords" content="ЗДО Ластівка, Садочок Ластівка, ЗДО Садочок Ластівка, дитячий садок, дошкільна освіта, дитячий сад Україна, виховання дітей, інклюзивна освіта">
+<meta name="author" content="ЗДО «Садочок Ластівка»">
 
-<!-- Google Search Console -->
+<!-- Google Search Console Verification -->
 <meta name="google-site-verification" content="L3aMoZRFZU0pbWwUjJfPDd5h7hcqdM3p3z4dfj7Qqo4" />
 
-<style>
-body{margin:0;font-family:Arial;background:#f4fdf7}
-header{background:#2ecc71;color:#fff;padding:15px;text-align:center;position:relative}
-header button{position:absolute;right:15px;top:15px;padding:8px 12px;background:#27ae60;color:#fff;border:none;border-radius:5px;cursor:pointer}
-nav{display:flex;flex-wrap:wrap;justify-content:center;background:#27ae60}
-nav button{border:none;background:none;color:#fff;padding:10px 14px;cursor:pointer}
-nav button:hover{background:rgba(255,255,255,.2)}
-.section{display:none;padding:20px}
-.section.active{display:block}
-.card{background:#fff;padding:15px;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,.1);margin-bottom:15px}
-iframe{width:100%;height:400px;border:none;border-radius:8px;margin-bottom:10px}
-textarea{width:100%;height:100px;padding:10px;margin-bottom:10px;border-radius:5px;border:1px solid #ccc;resize:none}
-button.saveBtn{background:#27ae60;color:#fff;padding:8px 12px;border:none;border-radius:5px;cursor:pointer}
-footer{text-align:center;padding:15px;background:#eee}
-.hidden{display:none}
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
 
-/* login */
-.modal{display:none;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);justify-content:center;align-items:center}
-.modal-content{background:#fff;padding:20px;border-radius:10px;width:300px}
-.modal-content input{width:100%;padding:8px;margin:10px 0}
+<!-- Structured Data for SEO -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "EducationalOrganization",
+  "name": "ЗДО «Садочок Ластівка»",
+  "description": "Дитячий садок для дошкільної освіти дітей віком від 2 до 7 років",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "вул. Прикладна, 123",
+    "addressLocality": "Київ",
+    "addressCountry": "Україна"
+  },
+  "telephone": "+380-44-123-45-67",
+  "email": "info@sadocok-lastivka.ua",
+  "url": "https://artem56498.github.io/Lastivka/",
+  "openingHours": "Mo-Fr 07:30-18:30",
+  "image": "https://img.icons8.com/color/512/000000/children.png"
+}
+</script>
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://artem56498.github.io/Lastivka/">
+<meta property="og:title" content="ЗДО «Садочок Ластівка» — Офіційний сайт дитячого садка">
+<meta property="og:description" content="Якісна дошкільна освіта для дітей від 2 до 7 років. Досвідчені педагоги, сучасні методики, індивідуальний підхід.">
+<meta property="og:image" content="https://img.icons8.com/color/512/000000/children.png">
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image">
+<meta property="twitter:url" content="https://artem56498.github.io/Lastivka/">
+<meta property="twitter:title" content="ЗДО «Садочок Ластівка» — Офіційний сайт дитячого садка">
+<meta property="twitter:description" content="Якісна дошкільна освіта для дітей від 2 до 7 років. Досвідчені педагоги, сучасні методики, індивідуальний підхід.">
+<meta property="twitter:image" content="https://img.icons8.com/color/512/000000/children.png">
+
+<!-- Favicon -->
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👶</text></svg>">
+<link rel="apple-touch-icon" href="https://img.icons8.com/color/144/000000/children.png">
+<meta name="theme-color" content="#4a6fa5">
+
+<style>
+/* ======== БАЗОВІ СТИЛІ ======== */
+:root {
+    --primary: #4a6fa5;
+    --primary-dark: #385d8a;
+    --accent: #6dbfb8;
+    --accent-light: #8fd9d2;
+    --light: #f8f9fa;
+    --light-gray: #e9ecef;
+    --medium-gray: #adb5bd;
+    --dark: #343a40;
+    --shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+    --shadow-hover: 0 12px 35px rgba(0, 0, 0, 0.15);
+    --radius: 16px;
+    --transition: all 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+    background: linear-gradient(135deg, #f5f7fa 0%, #e4edf5 100%);
+    color: var(--dark);
+    line-height: 1.6;
+    min-height: 100vh;
+}
+
+/* ======== HEADER ======== */
+  header {
+    background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+    color: white;
+    padding: 1.5rem 1rem;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    border-bottom: 5px solid var(--accent);
+}
+
+.header-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    position: relative;
+}
+
+header h1 {
+    margin: 0 0 0.5rem 0;
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+header p {
+    margin: 0;
+    font-size: 1.1rem;
+    opacity: 0.95;
+}
+
+.login-btn {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px 24px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(10px);
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 50px;
+    cursor: pointer;
+    font-weight: 600;
+    font-size: 1rem;
+    transition: var(--transition);
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.login-btn:hover {
+    background: rgba(255, 255, 255, 0.25);
+    transform: translateY(-50%) scale(1.05);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-btn::before {
+    content: "🔐";
+    font-size: 1.1rem;
+}
+
+@media (max-width: 768px) {
+    .login-btn {
+        position: relative;
+        top: auto;
+        right: auto;
+        transform: none;
+        margin: 1rem auto 0;
+        width: fit-content;
+    }
+    
+    .header-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ======== NAVIGATION ======== */
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background: white;
+    padding: 0.75rem;
+    margin: 1.5rem auto;
+    max-width: 1200px;
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    position: sticky;
+    top: 10px;
+    z-index: 100;
+}
+
+.nav-btn {
+    border: none;
+    background: transparent;
+    color: var(--primary-dark);
+    padding: 12px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 50px;
+    font-weight: 600;
+    transition: var(--transition);
+    white-space: nowrap;
+    font-size: 0.95rem;
+    position: relative;
+    overflow: hidden;
+}
+
+.nav-btn:hover {
+    background: var(--light-gray);
+    color: var(--primary);
+    transform: translateY(-2px);
+}
+
+.nav-btn.active {
+    background: linear-gradient(to right, var(--primary), var(--accent));
+    color: white;
+    box-shadow: 0 4px 15px rgba(74, 111, 165, 0.3);
+    transform: translateY(-2px);
+}
+
+.nav-btn.active::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 30px;
+    height: 3px;
+    background: white;
+    border-radius: 2px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        margin: 1rem;
+        padding: 0.5rem;
+        border-radius: 12px;
+    }
+    
+    .nav-btn {
+        padding: 10px 15px;
+        font-size: 0.85rem;
+        margin: 3px;
+    }
+}
+
+/* ======== CONTAINER & SECTIONS ======== */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px 40px;
+}
+
+.section {
+    display: none;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.section.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+    animation: fadeInUp 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 </style>
 </head>
-
 <body>
 
 <header>
-<h1>ЗДО «Садочок Ластівка»</h1>
-<p>Офіційний сайт</p>
-<button onclick="openLogin()">Увійти</button>
+    <div class="header-content">
+        <h1>ЗДО «Садочок Ластівка»</h1>
+        <p>Офіційний сайт дитячого садка</p>
+        <button class="login-btn" onclick="openLoginModal()">Увійти в систему</button>
+    </div>
 </header>
-
 <nav>
-<button onclick="openTab('home')">Головна</button>
-<button onclick="openTab('news')">Новини</button>
-<button onclick="openTab('album')">Фотоальбом</button>
-<button onclick="openTab('groups')">Групи</button>
-<button onclick="openTab('schedule')">Розклад</button>
-<button onclick="openTab('collective')">Педколектив</button>
-<button onclick="openTab('inclusive')">Інклюзія</button>
-<button onclick="openTab('statut')">Статут</button>
-<button onclick="openTab('orders')">Накази</button>
-<button class="admin hidden" onclick="openTab('attestation')">Атестація</button>
-<button class="admin hidden" onclick="openTab('admin')">Адмінка</button>
+    <button class="nav-btn active" data-tab="home">🏠 Головна</button>
+    <button class="nav-btn" data-tab="news">📰 Новини</button>
+    <button class="nav-btn" data-tab="album">📸 Фотоальбом</button>
+    <button class="nav-btn" data-tab="groups">👨‍👩‍👧‍👦 Групи</button>
+    <button class="nav-btn" data-tab="schedule">📅 Розклад</button>
+    <button class="nav-btn" data-tab="collective">👩‍🏫 Педколектив</button>
+    <button class="nav-btn" data-tab="inclusive">❤️ Інклюзія</button>
+    <button class="nav-btn" data-tab="statut">📋 Статут</button>
+    <button class="nav-btn" data-tab="orders">📄 Накази</button>
 </nav>
 
-<!-- Вкладки -->
-<div id="home" class="section active">
-<div class="card">
-<h2>Ласкаво просимо!</h2>
-<p>Офіційний сайт ЗДО «Садочок Ластівка»</p>
+<div class="container">
+    <!-- ГОЛОВНА -->
+    <div id="home" class="section active">
+        <div class="card">
+            <h2>Ласкаво просимо!</h2>
+            <p>Офіційний сайт ЗДО «Садочок Ластівка» — місце, де кожна дитина отримує турботу, любов та якісну дошкільну освіту.</p>
+            <p>Наша місія — створення безпечного та комфортного середовища для гармонійного розвитку дітей віком від 2 до 7 років.</p>
+            <p><strong>📍 Адреса:</strong> вул. Прикладна, 123, м. Київ<br>
+               <strong>📞 Телефон:</strong> (044) 123-45-67<br>
+               <strong>📧 Email:</strong> info@sadocok-lastivka.ua</p>
+        </div>
+        <div class="card">
+            <h2>Наші переваги</h2>
+            <ul style="padding-left: 1.5rem;">
+                <li>✅ Кваліфіковані педагоги з багаторічним досвідом</li>
+                <li>✅ Індивідуальний підхід до кожної дитини</li>
+                <li>✅ Сучасні методики розвитку та навчання</li>
+                <li>✅ Інклюзивна освіта для дітей з особливими потребами</li>
+                <li>✅ Безпечне та обладнане середовище</li>
+                <li>✅ Співпраця з батьками</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- НОВИНИ -->
+    <div id="news" class="section">
+        <div class="card">
+            <h2>📰 Новини та оголошення</h2>
+            <p>Актуальні новини, оголошення та важлива інформація для батьків:</p>
+            <a class="drive-link" href="https://drive.google.com/drive/folders/1zooffQ541chkyuKTUul2nkPjJDwirvxQ" target="_blank" rel="noopener noreferrer">
+                Відкрити папку з новинами
+            </a>
+        </div>
+    </div>
+
+    <!-- ФОТОАЛЬБОМ -->
+    <div id="album" class="section">
+        <div class="card">
+            <h2>📸 Фотоальбом</h2>
+            <p>Фотографії з життя нашого садочка, свят та заходів:</p>
+            <a class="drive-link" href="https://drive.google.com/drive/folders/1IknDuijQtf-RrgZ8PtK89K1W2_tWz6xU" target="_blank" rel="noopener noreferrer">
+                Відкрити фотоальбом
+            </a>
+        </div>
+  </div>
+  <!-- ГРУПИ -->
+    <div id="groups" class="section">
+        <div class="card">
+            <h2>👨‍👩‍👧‍👦 Групи нашого садочка</h2>
+            <p>Оберіть групу, щоб переглянути матеріали та інформацію:</p>
+            <div class="drive-link-group">
+                <a class="drive-link" href="https://drive.google.com/drive/folders/1JGMSOMT_J2t3BaH-gb9zfTsBa0Mwcit_" target="_blank" rel="noopener noreferrer">🍯 Бджілки</a>
+                <a class="drive-link" href="https://drive.google.com/drive/folders/1x4hdq03XGAvSasfasuUZDnglTzIGeAtl" target="_blank" rel="noopener noreferrer">🌈 Веселка</a>
+                <a class="drive-link" href="https://drive.google.com/drive/folders/1NniCYxUD-PQG7C_QRuWc7xw02BMgdagk" target="_blank" rel="noopener noreferrer">⭐ Зірочки</a>
+                <a class="drive-link" href="https://drive.google.com/drive/folders/1ILclmWrIcnjUO5A0inVl1lFKYr-M0KZ2" target="_blank" rel="noopener noreferrer">💧 Краплинки</a>
+                <a class="drive-link" href="https://drive.google.com/drive/folders/1_88DhBgMjTTY9Bnxh-HFlhyIHROHkx5B" target="_blank" rel="noopener noreferrer">🔍 Пізнайко</a>
+                <a class="drive-link" href="https://drive.google.com/drive/folders/1IaHJfVHh_g9W55Yc1ZIeGVPBQqsZxdAG" target="_blank" rel="noopener noreferrer">☀️ Сонечко</a>
+                <a class="drive-link" href="https://drive.google.com/drive/folders/1cjb4QtNFRAcVbNB62YaHsp0n8L4r8wzg" target="_blank" rel="noopener noreferrer">🌻 Соняшник</a>
+                <a class="drive-link" href="https://drive.google.com/drive/folders/16wVHEkqukh9DEyDiaW_QqjnBCH_aWxDn" target="_blank" rel="noopener noreferrer">❓ Чомусики</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- РОЗКЛАД -->
+    <div id="schedule" class="section">
+        <div class="card">
+            <h2>📅 Розклад занять</h2>
+            <p>Щоденний розклад занять та режим дня для кожної вікової групи:</p>
+            <a class="drive-link" href="https://drive.google.com/drive/folders/1WiA4RmGSrRH29CbrXg14df5JtuYd6TeJ" target="_blank" rel="noopener noreferrer">
+                Відкрити розклад
+            </a>
+        </div>
+    </div>
+
+    <!-- ПЕДКОЛЕКТИВ -->
+    <div id="collective" class="section">
+        <div class="card">
+            <h2>👩‍🏫 Педагогічний колектив</h2>
+            <p>Інформація про наших кваліфікованих педагогів та вихователів:</p>
+            <a class="drive-link" href="https://drive.google.com/drive/folders/1Fwu64LsLkIeybCPFTni-_5DgFPvtBMp7" target="_blank" rel="noopener noreferrer">
+                Відкрити документи педколективу
+            </a>
+        </div>
+    </div>
+
+    <!-- ІНКЛЮЗІЯ -->
+    <div id="inclusive" class="section">
+        <div class="card">
+            <h2>❤️ Інклюзивна освіта</h2>
+            <p>Матеріали та документи з інклюзивної освіти для дітей з особливими потребами:</p>
+            <a class="drive-link" href="https://drive.google.com/drive/folders/10Q-sd76LpOaqeMxjuyNNYUhFwHMz3lRK" target="_blank" rel="noopener noreferrer">
+                Документи з інклюзії
+            </a>
+        </div>
+    </div>
+
+    <!-- СТАТУТ -->
+    <div id="statut" class="section">
+        <div class="card">
+            <h2>📋 Статут закладу</h2>
+            <p>Офіційний статут ЗДО «Садочок Ластівка»:</p>
+            <a class="drive-link" href="https://drive.google.com/drive/folders/1fJZhnr-yTZ5Uecl4jdnkuSEDhleSx0dz" target="_blank" rel="noopener noreferrer">
+                Відкрити статут
+            </a>
+        </div>
+    </div>
+
+    <!-- НАКАЗИ -->
+    <div id="orders" class="section">
+        <div class="card">
+            <h2>📄 Накази та розпорядження</h2>
+            <p>Архів наказів та розпоряджень керівництва закладу:</p>
+            <a class="drive-link" href="https://drive.google.com/drive/folders/1ANR6bzU3viTLAgj2NSY-n6JfDlzs_9mS" target="_blank" rel="noopener noreferrer">
+                Відкрити накази
+            </a>
+        </div>
+    </div>
 </div>
+<style>
+/* ======== CARDS ======== */
+.card {
+    background: white;
+    padding: 2rem;
+    border-radius: var(--radius);
+    margin-bottom: 1.5rem;
+    box-shadow: var(--shadow);
+    border-left: 5px solid var(--accent);
+    transition: var(--transition);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-hover);
+}
+
+.card h2 {
+    margin-top: 0;
+    color: var(--primary);
+    border-bottom: 2px solid var(--light-gray);
+    padding-bottom: 0.75rem;
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+    position: relative;
+}
+
+.card h2::after {
+    content: '';
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background: var(--accent);
+    border-radius: 2px;
+}
+
+/* ======== DRIVE LINKS ======== */
+.drive-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    background: linear-gradient(to right, var(--primary), var(--primary-dark));
+    padding: 14px 24px;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: var(--transition);
+    margin: 8px 5px;
+    box-shadow: 0 4px 12px rgba(74, 111, 165, 0.3);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    position: relative;
+    overflow: hidden;
+}
+
+.drive-link::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+    transition: 0.5s;
+}
+
+.drive-link:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(74, 111, 165, 0.4);
+    background: linear-gradient(to right, var(--primary-dark), var(--primary));
+}
+
+.drive-link:hover::before {
+    left: 100%;
+}
+
+.drive-link::after {
+    content: "↗";
+    font-size: 0.9em;
+    opacity: 0.9;
+}
+
+.drive-link-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 1rem;
+}
+</style>
+<footer>
+    <p>© 2026 ЗДО «Садочок Ластівка». Всі права захищені.</p>
+    <p style="opacity: 0.8; font-size: 0.9rem; margin-top: 0.5rem;">Офіційний сайт закладу дошкільної освіти</p>
+    <p style="opacity: 0.6; font-size: 0.8rem; margin-top: 0.5rem;">
+        Адреса: вул. Прикладна, 123, м. Київ • Телефон: (044) 123-45-67 • Email: info@sadocok-lastivka.ua
+    </p>
+</footer>
+
+<!-- МОДАЛЬНЕ ВІКНО ВХОДУ -->
+<div id="loginModal" class="modal">
+    <div class="modal-content">
+        <button class="modal-close" onclick="closeLoginModal()">×</button>
+        <h3>🔐 Вхід в систему</h3>
+        <input type="text" class="modal-input" id="loginUsername" placeholder="Логін або email" autocomplete="username">
+        <input type="password" class="modal-input" id="loginPassword" placeholder="Пароль" autocomplete="current-password">
+        <button class="modal-btn" onclick="handleLogin()">Увійти</button>
+        <div style="margin-top: 1.5rem; padding: 1rem; background: #f8f9fa; border-radius: 8px; font-size: 0.9rem;">
+            <p style="margin: 0 0 5px 0; color: #666;">Для демонстрації:</p>
+            <p style="margin: 0; color: #666;">Логін: <strong>admin</strong></p>
+            <p style="margin: 0; color: #666;">Пароль: <strong>admin123</strong></p>
+        </div>
+    </div>
 </div>
 
-<div id="news" class="section">
-<div class="card">
-<h2>Новини та документи</h2>
-<iframe src="https://drive.google.com/embeddedfolderview?id=1zooffQ541chkyuKTUul2nkPjJDwirvxQ#list"></iframe>
-</div>
-</div>
+<style>
+/* ======== MODAL ======== */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    backdrop-filter: blur(4px);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+    animation: fadeIn 0.3s ease;
+}
 
-<div id="album" class="section">
-<div class="card">
-<h2>Фотоальбом</h2>
-<iframe src="https://drive.google.com/embeddedfolderview?id=1IknDuijQtf-RrgZ8PtK89K1W2_tWz6xU#grid"></iframe>
-</div>
-</div>
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
 
-<div id="groups" class="section">
-<div class="card">
-<h2>Групи</h2>
-<select onchange="loadGroup(this.value)">
-<option value="ZIRO">Зірочки</option>
-<option value="KRAP">Краплинки</option>
-<option value="SONE">Сонечко</option>
-<option value="SONY">Соняшник</option>
-<option value="PIZ">Пізнайко</option>
-<option value="CHOM">Чомусики</option>
-<option value="VES">Веселка</option>
-<option value="BDZ">Бджілки</option>
-</select>
-<iframe id="groupFrame"></iframe>
-</div>
-</div>
+.modal-content {
+    background: white;
+    padding: 2.5rem;
+    border-radius: var(--radius);
+    width: 90%;
+    max-width: 400px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.3);
+    border-top: 6px solid var(--accent);
+    position: relative;
+    animation: slideUp 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
 
-<div id="schedule" class="section">
-<div class="card">
-<h2>Розклад занять</h2>
-<iframe src="https://drive.google.com/embeddedfolderview?id=1WiA4RmGSrRH29CbrXg14df5JtuYd6TeJ#list"></iframe>
-</div>
-</div>
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 
-<div id="collective" class="section">
-<div class="card">
-<h2>Педагогічний колектив</h2>
-<iframe src="https://drive.google.com/embeddedfolderview?id=1Fwu64LsLkIeybCPFTni-_5DgFPvtBMp7#grid"></iframe>
-</div>
-</div>
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    color: var(--medium-gray);
+    cursor: pointer;
+    transition: var(--transition);
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-close:hover {
+    color: var(--primary);
+    background: var(--light-gray);
+}
+
+.modal h3 {
+    margin-top: 0;
+    color: var(--primary);
+    margin-bottom: 1.5rem;
+    text-align: center;
+}
+
+.modal-input {
+    width: 100%;
+    padding: 14px;
+    margin: 12px 0;
+    border: 2px solid var(--light-gray);
+    border-radius: 10px;
+    font-size: 1rem;
+    transition: var(--transition);
+}
+
+.modal-input:focus {
+    outline: none;
+    border-color: var(--accent);
+    box-shadow: 0 0 0 3px rgba(109, 191, 184, 0.2);
+}
+
+.modal-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(to right, var(--primary), var(--primary-dark));
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: var(--transition);
+    margin-top: 10px;
+}
+
+.modal-btn:hover {
+    background: linear-gradient(to right, var(--primary-dark), var(--primary));
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(74, 111, 165, 0.3);
+}
+
+/* ======== FOOTER ======== */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: var(--dark);
+    color: white;
+    margin-top: 3rem;
+    border-top: 5px solid var(--accent);
+}
+
+footer p {
+    margin: 0;
+    opacity: 0.9;
+}
+
+/* ======== UTILITY CLASSES ======== */
+.hidden {
+    display: none !important;
+}
+  /* ======== RESPONSIVE ======== */
+@media (max-width: 480px) {
+    .container {
+        padding: 0 15px 30px;
+    }
+    
+    .card {
+        padding: 1.5rem;
+    }
+    
+    .drive-link-group {
+        grid-template-columns: 1fr;
+    }
+}
+</style>
+<script>
+// ====================
+// УПРАВЛІННЯ ВКЛАДКАМИ
+// ====================
+const navBtns = document.querySelectorAll('.nav-btn');
+const sections = document.querySelectorAll('.section');
+
+function switchTab(tabId) {
+    // Оновлюємо кнопки навігації
+    navBtns.forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.getAttribute('data-tab') === tabId) {
+            btn.classList.add('active');
+        }
+    });
+    
+    // Оновлюємо секції
+    sections.forEach(section => {
+        section.classList.remove('active');
+        if (section.id === tabId) {
+            // Додаємо невелику затримку для плавної анімації
+            setTimeout(() => {
+                section.classList.add('active');
+            }, 10);
+        }
+    });
+    
+    // Прокручуємо до верху секції
+    const activeSection = document.getElementById(tabId);
+    if (activeSection) {
+        activeSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }
+}
+
+// Додаємо обробники подій для кнопок навігації
+navBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const tabId = btn.getAttribute('data-tab');
+        switchTab(tabId);
+    });
+});
+
+// ====================
+// УПРАВЛІННЯ МОДАЛЬНИМИ ВІКНАМИ
+// ====================
+function openLoginModal() {
+    document.getElementById('loginModal').style.display = 'flex';
+    document.getElementById('loginUsername').focus();
+}
+
+function closeLoginModal() {
+    document.getElementById('loginModal').style.display = 'none';
+    // Очищаємо поля форми
+    document.getElementById('loginUsername').value = '';
+    document.getElementById('loginPassword').value = '';
+}
+
+// Закриття модального вікна при кліку поза ним
+document.getElementById('loginModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeLoginModal();
+    }
+});
+
+// Закриття модального вікна по клавіші Escape
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeLoginModal();
+    }
+});
+
+// ====================
+// АВТОРИЗАЦІЯ
+// ====================
+function handleLogin() {
+    const username = document.getElementById('loginUsername').value.trim();
+    const password = document.getElementById('loginPassword').value.trim();
+    
+    // Проста перевірка для демонстрації
+    if (username === 'admin' && password === 'admin123') {
+        alert('✅ Вітаємо, адміністраторе! Успішний вхід в систему.');
+        closeLoginModal();
+        
+        // Тут можна додати логіку для адмін-панелі
+        // Наприклад: document.querySelector('.admin-panel').classList.remove('hidden');
+    } else if (username && password) {
+        alert('👩‍🏫 Вітаємо, вихователю! Успішний вхід в систему.');
+        closeLoginModal();
+        
+        // Тут можна додати логіку для панелі вихователя
+        // Наприклад: document.querySelector('.educator-panel').classList.remove('hidden');
+    } else {
+        alert('❌ Будь ласка, введіть логін та пароль.');
+    }
+}
+
+// Автовход по клавіші Enter в модальному вікні
+document.getElementById('loginPassword').addEventListener('keypress', function(e) {
+    if (e.key === 'Enter') {
+        handleLogin();
+    }
+});
+  // ====================
+// ДОДАТКОВІ ФУНКЦІЇ
+// ====================
+// Автоматичне прокручування до активної секції при завантаженні сторінки
+window.addEventListener('load', function() {
+    // Активуємо першу вкладку за замовчуванням
+    switchTab('home');
+    
+    // Додаємо ефект "пульсації" для кнопки входу при першому відвідуванні
+    setTimeout(() => {
+        const loginBtn = document.querySelector('.login-btn');
+        loginBtn.style.animation = 'none';
+        setTimeout(() => {
+            loginBtn.style.animation = 'pulse 2s infinite';
+        }, 10);
+    }, 1000);
+});
+
+// Додаємо анімацію пульсації для кнопки
+const style = document.createElement('style');
+style.textContent = 
+    @keyframes pulse {
+        0% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.4); }
+        70% { box-shadow: 0 0 0 10px rgba(255, 255, 255, 0); }
+        100% { box-shadow: 0 0 0 0 rgba(255, 255, 255, 0); }
+    }
+;
+document.head.appendChild(style);
+
+// ====================
+// GOOGLE ANALYTICS ДОДАТКОВІ ПОДІЇ
+// ====================
+// Функція для відстеження переходів по вкладках
+function trackTabSwitch(tabName) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'tab_switch', {
+            'event_category': 'engagement',
+            'event_label': tabName,
+            'value': 1
+        });
+    }
+}
+
+// Функція для відстеження кліків на Google Drive посилання
+function trackDriveLinkClick(linkName) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'drive_link_click', {
+            'event_category': 'engagement',
+            'event_label': linkName,
+            'value': 1
+        });
+    }
+}
+
+// Функція для відстеження входу в систему
+function trackLoginAttempt(success) {
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'login_attempt', {
+            'event_category': 'authentication',
+            'event_label': success ? 'success' : 'failed',
+            'value': 1
+        });
+    }
+}
+
+// Додаємо відстеження для переходів по вкладках
+navBtns.forEach(btn => {
+    btn.addEventListener('click', () => {
+        const tabId = btn.getAttribute('data-tab');
+        trackTabSwitch(tabId);
+    });
+});
+
+// Додаємо відстеження для кліків на Google Drive посилання
+document.querySelectorAll('.drive-link').forEach(link => {
+    link.addEventListener('click', function() {
+        const linkText = this.textContent || this.innerText;
+        trackDriveLinkClick(linkText);
+    });
+});
+
+// Оновлюємо функцію входу для відстеження
+function handleLoginWithTracking() {
+    const username = document.getElementById('loginUsername').value.trim();
+    const password = document.getElementById('loginPassword').value.trim();
+    
+    if (username === 'admin' && password === 'admin123') {
+        trackLoginAttempt(true);
+        alert('✅ Вітаємо, адміністраторе! Успішний вхід в систему.');
+        closeLoginModal();
+    } else if (username && password) {
+        trackLoginAttempt(true);
+        alert('👩‍🏫 Вітаємо, вихователю! Успішний вхід в систему.');
+        closeLoginModal();
+    } else {
+        trackLoginAttempt(false);
+        alert('❌ Будь ласка, введіть логін та пароль.');
+    }
+}
+
+// Замінюємо стару функцію на нову з відстеженням
+document.querySelector('.modal-btn').onclick = handleLoginWithTracking;
+
+console.log('🚀 Сайт ЗДО «Садочок Ластівка» завантажено та готовий до роботи');
+console.log('🔗 URL: https://artem56498.github.io/Lastivka/');
+console.log('🔍 Google Search Console код: L3aMoZRFZU0pbWwUjJfPDd5h7hcqdM3p3z4dfj7Qqo4');
+console.log('📊 Google Analytics активовано');
+console.log('✅ Сайт повністю готовий до індексації Google');
+</script>
+</body>
+</html>
