@@ -48,7 +48,7 @@
         --primary-dark: #385d8a;
         --accent: #6dbfb8;
         --light: #000000;
-        --light-gray: #000000;
+        --light-gray: #6a00ff;
         --dark: #343a40;
         --shadow: 0 5px 15px rgba(0,0,0,0.1);
         --radius: 12px;
@@ -73,7 +73,7 @@
         color: rgb(255, 255, 255);
         padding: 25px 20px;
         text-align: center;
-        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        box-shadow: 0 4px 12px rgba(68, 0, 255, 0.1);
     }
     
     header h1 {
@@ -92,9 +92,9 @@
     }
     
     .header-btn {
-        background: rgba(255,255,255,0.2);
+        background: rgba(0, 119, 255, 0.2);
         border: 2px solid rgba(255,255,255,0.3);
-        color: rgb(0, 0, 0);
+        color: #ffffff;
         padding: 12px 25px;
         border-radius: 50px;
         font-size: 1rem;
@@ -146,9 +146,9 @@
     
     .nav-btn.active {
         background: linear-gradient(to right, var(--primary), var(--accent));
-        color: white;
+        color: rgb(55, 0, 255);
         border-color: transparent;
-        box-shadow: 0 4px 10px rgba(74, 111, 165, 0.3);
+        box-shadow: 0 4px 10px rgba(0, 100, 249, 0.3);
     }
     
     /* CONTAINER */
@@ -192,8 +192,6 @@
             <p><strong>Наша місія:</strong> створення безпечного та комфортного середовища для гармонійного розвитку дітей віком від 2 до 7 років.</p>
             <div class="info-box">
                 <p><strong>📍 Адреса:</strong> вул. Прикордона</p>
-                <p><strong>📞 Телефон:</strong> </p>
-                <p><strong>📧 Email:</strong> </p>
             </div>
         </div>
 
@@ -559,7 +557,7 @@ function handleLogin() {
         return;
     }
     
-    if (username === 'admin' && password === 'admin123') {
+    if (username === 'zdo lastivka' && password === 'qwerty12345') {
         alert('✅ Вітаємо, адміністраторе! Успішний вхід в систему.');
         closeLoginModal();
         // Тут можна додати функціонал адміна
