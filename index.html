@@ -24,16 +24,16 @@
       "@context": "https://schema.org",
       "@type": "EducationalOrganization",
       "name": "ЗДО «Садочок Ластівка»",
-      "description": "Дитячий садок для дошкільної освіти дітей віком від 2 до 7 років",
+      "description": "Дитячий садок для дошкільної освіти дітей віком від 1 до 6 років",
       "address": {
         "@type": "PostalAddress",
         "streetAddress": "вул. Прикордона 
         "addressLocality": "Овруч",
         "addressCountry": "Україна"
       },
-      "telephone": "+380-44-123-45-67",
-      "email": "info@sadocok-lastivka.ua",
-      "url": "https://artem56498.github.io/Lastivka/",
+      "telephone": "",
+      "email": "",
+      "url": "https://lastivkadev.github.io/Lastivka_zdo_/",
       "openingHours": "Mo-Fr 07:30-18:30"
     }
     </script>
@@ -166,7 +166,7 @@
     <p>Офіційний сайт дитячого садка</p>
     <div class="header-buttons">
         <button class="header-btn" onclick="openLoginModal()">
-            <span>🔐</span> Увійти в систему
+            <span>🔐</span> Увійти 
         </button>
     </div>
 </header>
@@ -247,7 +247,7 @@
 }
 
 .card {
-    background: white;
+    background: rgb(255, 255, 255);
     padding: 25px;
     border-radius: var(--radius);
     box-shadow: var(--shadow);
@@ -282,7 +282,7 @@
 .drive-link {
     display: inline-block;
     background: linear-gradient(to right, var(--primary), var(--primary-dark));
-    color: rgb(0, 136, 255);
+    color: rgb(0, 0, 0);
     padding: 12px 20px;
     border-radius: 50px;
     text-decoration: none;
@@ -341,7 +341,7 @@
 
         <!-- СТАТУТ -->
         <div id="statut" class="card">
-            <h2>📋 Статут закладу</h2>
+            <h2>📋 Статут </h2>
             <p>Офіційний статут садочка:</p>
             <a class="drive-link" href="https://drive.google.com/drive/folders/1fJZhnr-yTZ5Uecl4jdnkuSEDhleSx0dz" target="_blank">
                 📁 Відкрити статут
@@ -350,8 +350,8 @@
 
         <!-- НАКАЗИ -->
         <div id="orders" class="card">
-            <h2>📄 Накази та розпорядження</h2>
-            <p>Архів наказів керівництва:</p>
+            <h2>📄 Накази </h2>
+            <p>Накази:</p>
             <a class="drive-link" href="https://drive.google.com/drive/folders/1ANR6bzU3viTLAgj2NSY-n6JfDlzs_9mS" target="_blank">
                 📁 Відкрити накази
             </a>
@@ -363,7 +363,7 @@
 <div id="loginModal" class="modal">
     <div class="modal-content">
         <button class="modal-close" onclick="closeLoginModal()">×</button>
-        <h3>🔐 Вхід в систему</h3>
+        <h3>🔐 Увійти</h3>
         <input type="text" class="modal-input" id="loginUsername" placeholder="Логін або email">
         <input type="password" class="modal-input" id="loginPassword" placeholder="Пароль">
         <button class="modal-btn" onclick="handleLogin()">Увійти</button>
@@ -389,7 +389,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgba(0,0,0,0.7);
+    background: rgba(19, 17, 172, 0.7);
     z-index: 1000;
     justify-content: center;
     align-items: center;
@@ -402,7 +402,7 @@
     width: 90%;
     max-width: 400px;
     position: relative;
-    box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
 }
 
 .modal-close {
@@ -596,7 +596,8 @@ document.addEventListener('DOMContentLoaded', function() {
     
     // Додаємо підказку для Google Analytics
     console.log('🚀 Сайт ЗДО «Садочок Ластівка» завантажено!');
-    console.log('🔗 URL: https://artem56498.github.io/Lastivka/');
+    console.log('🔗 URL:  https://lastivkadev.github.io/Lastivka_zdo_/  ');
+                                          
     console.log('🔍 Google Search Console код: L3aMoZRFZU0pbWwUjJfPDd5h7hcqdM3p3z4dfj7Qqo4');
 });
 
@@ -618,7 +619,7 @@ function checkSite() {
 /* Ефект при наведенні */
 .nav-btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 5px 15px rgba(140, 0, 255, 0.1);
 }
 
 .card {
@@ -655,7 +656,7 @@ function checkSite() {
 /* Світла тема для мобільних */
 @media (prefers-color-scheme: dark) {
     body {
-        background: #1a1a1a;
+        background: #ffffff40;
         color: #f0f0f0;
     }
     
