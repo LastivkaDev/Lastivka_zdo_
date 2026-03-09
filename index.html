@@ -1,35 +1,15 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-
 <title>Овруцький ЗДО №8 Ластівка</title>
-
 <meta charset="UTF-8">
-
-<meta name="title" content="Овруцький ЗДО №8 Ластівка">
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="description" content="Офіційний сайт садочка Ластівка місто Овруч">
+<meta name="keywords" content="ЗДО Ластівка, Садочок Ластівка, дитячий садок, дошкільна освіта">
+<meta name="author" content="Овруцький ЗДО №8 Ластівка">
+<meta name="google-site-verification" content="L3aMoZRFZU0pbWwUjJfPDd5h7hcqdM3p3z4dfj7Qqo4" />
 
-<meta property="og:title" content="Овруцький ЗДО №8 Ластівка">
-
-<meta property="og:description" content="Сайт дитячого садочка Ластівка">
-
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="keywords" content="ЗДО Ластівка, Садочок Ластівка, дитячий садок, дошкільна освіта, виховання дітей, інклюзивна освіта">
-    <meta name="author" content="Овруцький ЗДО №8 Ластівка">
-    <meta name="google-site-verification" content="L3aMoZRFZU0pbWwUjJfPDd5h7hcqdM3p3z4dfj7Qqo4" />
-    
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-XXXXXXXXXX');
-    </script>
-    
-    <!-- Structured Data -->
-    <script type="application/ld+json">
+<script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "EducationalOrganization",
@@ -45,487 +25,648 @@
   "url": "https://lastivkadev.github.io/Lastivka_zdo_/",
   "openingHours": "Mo-Fr 07:30-18:30"
 }
-    </script>
-    
-    <!-- Favicon -->
-    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐦</text></svg>">
-    
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
-    
-    <style>
-        /* ===== СКИДАННЯ ТА ЗМІННІ ===== */
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+</script>
 
-        :root {
-            --primary: #FFB347;      /* сонячний апельсин */
-            --primary-light: #FFD27F;
-            --primary-dark: #E69500;
-            --accent: #6EC4B6;        /* м'ятний */
-            --accent-light: #A3E0D6;
-            --background: #FFF9F0;    /* вершковий */
-            --card-bg: #FFFFFF;
-            --text: #4A4A4A;
-            --text-light: #6B6B6B;
-            --shadow: 0 15px 30px -10px rgba(0, 0, 0, 0.1);
-            --border-radius: 30px;
-            --border-radius-sm: 20px;
-        }
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🐦</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Baloo+2:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 
-        body {
-            font-family: 'Quicksand', sans-serif;
-            background-color: var(--background);
-            color: var(--text);
-            line-height: 1.6;
-            background-image: url('data:image/svg+xml;utf8,<svg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"><circle cx="10" cy="10" r="8" fill="%23FFD27F" opacity="0.3"/><circle cx="45" cy="30" r="12" fill="%236EC4B6" opacity="0.2"/><circle cx="30" cy="50" r="6" fill="%23FFB347" opacity="0.25"/></svg>');
-            background-size: 120px 120px;
-        }
+<style>
+* { margin: 0; padding: 0; box-sizing: border-box; }
 
-        /* ===== ШАПКА ===== */
-        header {
-            background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-            color: white;
-            padding: 40px 20px;
-            text-align: center;
-            border-bottom-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-            box-shadow: var(--shadow);
-            position: relative;
-            overflow: hidden;
-        }
+:root {
+  --sky: #4FC3F7;
+  --sky-dark: #0288D1;
+  --sun: #FFD54F;
+  --sun-dark: #FF8F00;
+  --grass: #66BB6A;
+  --cream: #FFFDE7;
+  --white: #FFFFFF;
+  --text-dark: #1A237E;
+  --text-mid: #37474F;
+  --text-light: #607D8B;
+  --card-radius: 28px;
+  --pill-radius: 100px;
+}
 
-        header::before {
-            content: "🐼🐧🦊🐻🐨";
-            position: absolute;
-            bottom: 10px;
-            left: 20px;
-            font-size: 2.5rem;
-            opacity: 0.2;
-            white-space: nowrap;
-            transform: rotate(-5deg);
-        }
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--cream);
+  color: var(--text-dark);
+  overflow-x: hidden;
+}
 
-        header::after {
-            content: "🧸🎈🍎✏️📚";
-            position: absolute;
-            top: 10px;
-            right: 20px;
-            font-size: 2.5rem;
-            opacity: 0.2;
-            transform: rotate(5deg);
-        }
+.sky-bg {
+  background: linear-gradient(180deg, #B3E5FC 0%, #E1F5FE 40%, #FFFDE7 100%);
+  min-height: 100vh;
+}
 
-        header h1 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            margin-bottom: 10px;
-            text-shadow: 3px 3px 0 rgba(0,0,0,0.1);
-        }
+.clouds {
+  position: fixed;
+  top: 0; left: 0; right: 0;
+  height: 200px;
+  pointer-events: none;
+  z-index: 0;
+  overflow: hidden;
+}
+.cloud {
+  position: absolute;
+  background: white;
+  border-radius: 50px;
+  opacity: 0.75;
+  animation: floatCloud linear infinite;
+}
+.cloud::before, .cloud::after {
+  content: '';
+  position: absolute;
+  background: white;
+  border-radius: 50%;
+}
+.cloud-1 { width: 120px; height: 45px; top: 30px; animation-duration: 35s; animation-delay: 0s; }
+.cloud-1::before { width: 60px; height: 60px; top: -28px; left: 20px; }
+.cloud-1::after  { width: 45px; height: 45px; top: -18px; right: 20px; }
+.cloud-2 { width: 90px; height: 35px; top: 70px; animation-duration: 28s; animation-delay: -10s; }
+.cloud-2::before { width: 50px; height: 50px; top: -22px; left: 15px; }
+.cloud-2::after  { width: 35px; height: 35px; top: -12px; right: 12px; }
+.cloud-3 { width: 150px; height: 55px; top: 15px; animation-duration: 42s; animation-delay: -20s; }
+.cloud-3::before { width: 75px; height: 75px; top: -35px; left: 25px; }
+.cloud-3::after  { width: 55px; height: 55px; top: -22px; right: 22px; }
 
-        header p {
-            font-size: 1.3rem;
-            font-weight: 500;
-            opacity: 0.95;
-        }
+@keyframes floatCloud {
+  from { transform: translateX(-200px); }
+  to   { transform: translateX(calc(100vw + 200px)); }
+}
 
-        /* ===== НАВІГАЦІЯ ===== */
-        nav {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            gap: 15px;
-            padding: 25px 20px;
-            max-width: 1300px;
-            margin: 0 auto;
-        }
+header {
+  position: relative;
+  z-index: 10;
+  text-align: center;
+  padding: 60px 20px 80px;
+}
 
-        .nav-btn {
-            background: white;
-            border: none;
-            padding: 15px 25px;
-            border-radius: 60px;
-            font-family: 'Quicksand', sans-serif;
-            font-weight: 600;
-            font-size: 1.1rem;
-            color: var(--primary-dark);
-            box-shadow: 0 8px 15px rgba(255, 180, 70, 0.2);
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            border: 3px solid transparent;
-        }
+.header-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--sun);
+  color: #7B3F00;
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  padding: 6px 18px;
+  border-radius: var(--pill-radius);
+  margin-bottom: 20px;
+  box-shadow: 0 4px 0 rgba(255,143,0,0.3);
+  animation: bounceIn 0.8s cubic-bezier(0.68,-0.55,0.265,1.55) both;
+}
 
-        .nav-btn:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 15px 25px rgba(255, 180, 70, 0.3);
-            background: var(--primary-light);
-            color: white;
-        }
+header h1 {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: clamp(2.2rem, 6vw, 4.2rem);
+  font-weight: 800;
+  line-height: 1.1;
+  color: var(--sky-dark);
+  text-shadow: 3px 3px 0 rgba(2,136,209,0.15);
+  animation: slideDown 0.9s cubic-bezier(0.22,1,0.36,1) 0.1s both;
+}
 
-        .nav-btn.active {
-            background: var(--primary);
-            color: white;
-            box-shadow: 0 10px 20px rgba(255, 140, 0, 0.3);
-            border-color: white;
-        }
+.bird-anim {
+  display: inline-block;
+  animation: birdFloat 3s ease-in-out infinite;
+}
 
-        /* ===== КОНТЕЙНЕР ===== */
-        .container {
-            max-width: 1300px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+@keyframes birdFloat {
+  0%, 100% { transform: translateY(0) rotate(-5deg); }
+  50%       { transform: translateY(-12px) rotate(5deg); }
+}
 
-        /* ===== КАРТКИ ===== */
-        .cards-container {
-            display: grid;
-            gap: 30px;
-        }
+header .subtitle {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-mid);
+  margin-top: 12px;
+  animation: slideDown 0.9s cubic-bezier(0.22,1,0.36,1) 0.2s both;
+}
 
-        .card {
-            background: var(--card-bg);
-            padding: 35px;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            border-left: 10px solid var(--accent);
-            display: none;
-            animation: fadeInUp 0.6s ease;
-        }
+.ground-strip {
+  width: 100%;
+  height: 60px;
+  background: linear-gradient(180deg, transparent, var(--grass) 60%);
+  position: relative;
+  margin-bottom: -2px;
+}
+.ground-strip::before {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 40px;
+  background: var(--grass);
+  border-top-left-radius: 50% 20px;
+  border-top-right-radius: 50% 20px;
+}
 
-        .card.active {
-            display: block;
-        }
+.main-wrapper {
+  background: linear-gradient(180deg, var(--grass) 0%, #C8E6C9 60px, var(--cream) 120px);
+  padding-top: 10px;
+  position: relative;
+  z-index: 5;
+}
 
-        @keyframes fadeInUp {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
+nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 30px 20px 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 10;
+}
 
-        .card h2 {
-            color: var(--primary-dark);
-            font-size: 2rem;
-            margin-bottom: 20px;
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            border-bottom: 3px dashed var(--accent-light);
-            padding-bottom: 10px;
-        }
+.nav-btn {
+  background: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: var(--pill-radius);
+  font-family: 'Nunito', sans-serif;
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--text-mid);
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.34,1.56,0.64,1);
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.08), 0 2px 12px rgba(0,0,0,0.08);
+  position: relative;
+  overflow: hidden;
+}
 
-        .card p {
-            font-size: 1.2rem;
-            margin-bottom: 20px;
-            color: var(--text-light);
-        }
+.nav-btn::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, var(--sky), #80CBC4);
+  opacity: 0;
+  transition: opacity 0.25s;
+}
 
-        .info-box {
-            background: var(--background);
-            padding: 20px;
-            border-radius: var(--border-radius-sm);
-            margin-top: 20px;
-            border: 2px solid var(--accent-light);
-        }
+.nav-btn:hover {
+  transform: translateY(-4px) scale(1.05);
+  box-shadow: 0 8px 0 rgba(0,0,0,0.1), 0 4px 20px rgba(0,0,0,0.12);
+  color: white;
+}
+.nav-btn:hover::before { opacity: 1; }
+.nav-btn:hover .btn-icon,
+.nav-btn:hover .btn-label { position: relative; z-index: 1; }
 
-        /* ===== ПОСИЛАННЯ ===== */
-        .drive-link {
-            display: inline-block;
-            background: linear-gradient(to right, var(--primary), var(--primary-dark));
-            color: white;
-            padding: 15px 30px;
-            border-radius: 60px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 1.2rem;
-            margin-top: 15px;
-            transition: all 0.3s;
-            border: 3px solid white;
-            box-shadow: 0 10px 15px rgba(255, 140, 0, 0.2);
-        }
+.nav-btn.active {
+  background: var(--sky-dark);
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 rgba(2,100,160,0.5), 0 4px 16px rgba(2,136,209,0.3);
+}
 
-        .drive-link:hover {
-            transform: translateY(-3px) scale(1.02);
-            box-shadow: 0 15px 25px rgba(255, 140, 0, 0.3);
-        }
+.btn-icon  { font-size: 1.2rem; position: relative; z-index: 1; }
+.btn-label { position: relative; z-index: 1; }
 
-        .groups-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 15px;
-            margin-top: 25px;
-        }
+.container {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px 20px 60px;
+}
 
-        .group-link {
-            background: var(--background);
-            border: 3px solid var(--accent);
-            padding: 15px 10px;
-            border-radius: 40px;
-            text-decoration: none;
-            color: var(--primary-dark);
-            font-weight: 600;
-            text-align: center;
-            transition: all 0.3s;
-            box-shadow: 0 5px 0 var(--accent);
-            font-size: 1.1rem;
-        }
+.card { display: none; animation: cardPop 0.5s cubic-bezier(0.34,1.56,0.64,1) both; }
+.card.active { display: block; }
 
-        .group-link:hover {
-            background: var(--accent);
-            color: white;
-            transform: translateY(-5px);
-            box-shadow: 0 10px 0 var(--primary-dark);
-        }
+@keyframes cardPop {
+  from { opacity: 0; transform: scale(0.93) translateY(20px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
 
-        /* ===== ФУТЕР ===== */
-        footer {
-            text-align: center;
-            padding: 30px 20px;
-            background: var(--primary-dark);
-            color: white;
-            margin-top: 60px;
-            border-top-left-radius: 50px;
-            border-top-right-radius: 50px;
-        }
+.card-inner {
+  background: white;
+  border-radius: var(--card-radius);
+  overflow: hidden;
+  box-shadow: 0 8px 0 rgba(0,0,0,0.06), 0 20px 60px rgba(0,0,0,0.08);
+}
 
-        .footer-sub {
-            opacity: 0.9;
-            font-size: 1rem;
-            margin-top: 10px;
-        }
+.card-stripe {
+  padding: 30px 40px 25px;
+  position: relative;
+  overflow: hidden;
+}
+.card-stripe::after {
+  content: '';
+  position: absolute;
+  bottom: -30px; right: -30px;
+  width: 120px; height: 120px;
+  border-radius: 50%;
+  background: rgba(255,255,255,0.2);
+}
+.stripe-home      { background: linear-gradient(135deg, #4FC3F7, #0288D1); }
+.stripe-news      { background: linear-gradient(135deg, #FFD54F, #FF8F00); }
+.stripe-album     { background: linear-gradient(135deg, #F48FB1, #C2185B); }
+.stripe-groups    { background: linear-gradient(135deg, #66BB6A, #2E7D32); }
+.stripe-schedule  { background: linear-gradient(135deg, #CE93D8, #7B1FA2); }
+.stripe-collective{ background: linear-gradient(135deg, #80CBC4, #00695C); }
+.stripe-inclusive { background: linear-gradient(135deg, #FFAB91, #BF360C); }
+.stripe-statut    { background: linear-gradient(135deg, #90CAF9, #1565C0); }
+.stripe-orders    { background: linear-gradient(135deg, #A5D6A7, #1B5E20); }
 
-        /* ===== АДАПТАЦІЯ ===== */
-        @media (max-width: 768px) {
-            header h1 {
-                font-size: 1.8rem;
-            }
-            
-            nav {
-                gap: 10px;
-                padding: 15px;
-            }
-            
-            .nav-btn {
-                padding: 12px 18px;
-                font-size: 1rem;
-            }
-            
-            .card {
-                padding: 25px;
-            }
-            
-            .card h2 {
-                font-size: 1.6rem;
-            }
-            
-            .groups-grid {
-                grid-template-columns: 1fr 1fr;
-            }
-        }
+.card-stripe h2 {
+  font-family: 'Baloo 2', sans-serif;
+  font-size: 2rem;
+  font-weight: 800;
+  color: white;
+  text-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  position: relative;
+  z-index: 1;
+}
 
-        @media (max-width: 480px) {
-            .groups-grid {
-                grid-template-columns: 1fr;
-            }
-            
-            .nav-btn {
-                width: 100%;
-                justify-content: center;
-            }
-        }
+.stripe-desc {
+  color: rgba(255,255,255,0.9);
+  font-weight: 600;
+  font-size: 1.05rem;
+  margin-top: 6px;
+  position: relative;
+  z-index: 1;
+}
 
-        /* ===== ДОДАТКОВІ ІГРОВІ ЕЛЕМЕНТИ ===== */
-        .card::after {
-            content: "🧸";
-            font-size: 3rem;
-            opacity: 0.1;
-            position: relative;
-            bottom: -10px;
-            right: -90%;
-            display: block;
-            pointer-events: none;
-        }
+.card-body { padding: 35px 40px; }
 
-        .nav-btn span {
-            font-size: 1.4rem;
-        }
-    </style>
+.mission-box {
+  background: linear-gradient(135deg, #E1F5FE, #E8F5E9);
+  border-radius: 20px;
+  padding: 24px;
+  margin-bottom: 24px;
+  border-left: 6px solid var(--sky);
+}
+.mission-box p {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--text-mid);
+  line-height: 1.6;
+}
+.mission-box strong { color: var(--sky-dark); }
+
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+}
+.info-tile {
+  background: var(--cream);
+  border-radius: 20px;
+  padding: 20px;
+  border: 2px solid #FFF9C4;
+  transition: transform 0.25s, box-shadow 0.25s;
+}
+.info-tile:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+}
+.tile-icon  { font-size: 2rem; margin-bottom: 8px; display: block; }
+.tile-label { font-size: 0.8rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; color: var(--text-light); margin-bottom: 4px; }
+.tile-value { font-weight: 700; font-size: 1.05rem; color: var(--text-dark); }
+
+.drive-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  color: white;
+  padding: 16px 32px;
+  border-radius: var(--pill-radius);
+  text-decoration: none;
+  font-weight: 800;
+  font-size: 1.1rem;
+  margin-top: 10px;
+  transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1);
+  border: 3px solid rgba(255,255,255,0.3);
+}
+.drive-btn:hover {
+  transform: translateY(-5px) scale(1.04);
+}
+.btn-arrow { font-size: 1.3rem; transition: transform 0.3s; }
+.drive-btn:hover .btn-arrow { transform: translateX(4px); }
+
+.btn-blue   { background: linear-gradient(135deg,#4FC3F7,#0288D1); box-shadow:0 6px 0 rgba(1,100,160,.4),0 4px 20px rgba(2,136,209,.3); }
+.btn-blue:hover   { box-shadow:0 12px 0 rgba(1,100,160,.3),0 8px 30px rgba(2,136,209,.4); }
+.btn-yellow { background: linear-gradient(135deg,#FFD54F,#FF8F00); box-shadow:0 6px 0 rgba(200,100,0,.4),0 4px 20px rgba(255,143,0,.3); }
+.btn-yellow:hover { box-shadow:0 12px 0 rgba(200,100,0,.3),0 8px 30px rgba(255,143,0,.4); }
+.btn-pink   { background: linear-gradient(135deg,#F48FB1,#C2185B); box-shadow:0 6px 0 rgba(160,0,60,.4),0 4px 20px rgba(194,24,91,.3); }
+.btn-pink:hover   { box-shadow:0 12px 0 rgba(160,0,60,.3),0 8px 30px rgba(194,24,91,.4); }
+.btn-green  { background: linear-gradient(135deg,#66BB6A,#2E7D32); box-shadow:0 6px 0 rgba(20,80,20,.4),0 4px 20px rgba(46,125,50,.3); }
+.btn-green:hover  { box-shadow:0 12px 0 rgba(20,80,20,.3),0 8px 30px rgba(46,125,50,.4); }
+.btn-purple { background: linear-gradient(135deg,#CE93D8,#7B1FA2); box-shadow:0 6px 0 rgba(80,0,120,.4),0 4px 20px rgba(123,31,162,.3); }
+.btn-purple:hover { box-shadow:0 12px 0 rgba(80,0,120,.3),0 8px 30px rgba(123,31,162,.4); }
+.btn-teal   { background: linear-gradient(135deg,#80CBC4,#00695C); box-shadow:0 6px 0 rgba(0,70,60,.4),0 4px 20px rgba(0,105,92,.3); }
+.btn-teal:hover   { box-shadow:0 12px 0 rgba(0,70,60,.3),0 8px 30px rgba(0,105,92,.4); }
+.btn-orange { background: linear-gradient(135deg,#FFAB91,#BF360C); box-shadow:0 6px 0 rgba(150,30,0,.4),0 4px 20px rgba(191,54,12,.3); }
+.btn-orange:hover { box-shadow:0 12px 0 rgba(150,30,0,.3),0 8px 30px rgba(191,54,12,.4); }
+.btn-navy   { background: linear-gradient(135deg,#90CAF9,#1565C0); box-shadow:0 6px 0 rgba(10,60,150,.4),0 4px 20px rgba(21,101,192,.3); }
+.btn-navy:hover   { box-shadow:0 12px 0 rgba(10,60,150,.3),0 8px 30px rgba(21,101,192,.4); }
+.btn-forest { background: linear-gradient(135deg,#A5D6A7,#1B5E20); box-shadow:0 6px 0 rgba(10,60,20,.4),0 4px 20px rgba(27,94,32,.3); }
+.btn-forest:hover { box-shadow:0 12px 0 rgba(10,60,20,.3),0 8px 30px rgba(27,94,32,.4); }
+
+.groups-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}
+.group-card {
+  background: var(--cream);
+  border-radius: 24px;
+  padding: 22px 16px;
+  text-decoration: none;
+  text-align: center;
+  font-weight: 800;
+  font-size: 1.05rem;
+  color: var(--text-dark);
+  transition: all 0.3s cubic-bezier(0.34,1.56,0.64,1);
+  border: 3px solid transparent;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  box-shadow: 0 4px 0 rgba(0,0,0,0.06);
+}
+.g-icon {
+  font-size: 2.5rem;
+  display: block;
+  transition: transform 0.3s cubic-bezier(0.34,1.56,0.64,1);
+}
+.group-card:hover {
+  transform: translateY(-8px) scale(1.04);
+  box-shadow: 0 16px 0 rgba(0,0,0,0.08), 0 8px 30px rgba(0,0,0,0.12);
+}
+.group-card:hover .g-icon { transform: scale(1.3) rotate(-10deg); }
+
+.g-bees     { background:linear-gradient(135deg,#FFF9C4,#FFF176); border-color:#F9A825; }
+.g-bees:hover { background:linear-gradient(135deg,#FFD54F,#FFCA28); color:#5D4037; }
+.g-rainbow  { background:linear-gradient(135deg,#E8F5E9,#F3E5F5,#E3F2FD); border-color:#AB47BC; }
+.g-rainbow:hover { background:linear-gradient(135deg,#CE93D8,#AB47BC); color:white; }
+.g-stars    { background:linear-gradient(135deg,#FFFDE7,#FFF9C4); border-color:#F57F17; }
+.g-stars:hover { background:linear-gradient(135deg,#FFB300,#FF8F00); color:white; }
+.g-drops    { background:linear-gradient(135deg,#E1F5FE,#B3E5FC); border-color:#0288D1; }
+.g-drops:hover { background:linear-gradient(135deg,#4FC3F7,#0288D1); color:white; }
+.g-piznaiko { background:linear-gradient(135deg,#E8F5E9,#DCEDC8); border-color:#558B2F; }
+.g-piznaiko:hover { background:linear-gradient(135deg,#AED581,#7CB342); color:white; }
+.g-sun      { background:linear-gradient(135deg,#FFF8E1,#FFF3E0); border-color:#EF6C00; }
+.g-sun:hover { background:linear-gradient(135deg,#FFCC02,#FF9800); color:white; }
+.g-sunflower{ background:linear-gradient(135deg,#FFFDE7,#FFF9C4); border-color:#F9A825; }
+.g-sunflower:hover { background:linear-gradient(135deg,#FFD600,#FF8F00); color:white; }
+.g-why      { background:linear-gradient(135deg,#FCE4EC,#F8BBD0); border-color:#C2185B; }
+.g-why:hover { background:linear-gradient(135deg,#F48FB1,#E91E63); color:white; }
+
+footer {
+  background: linear-gradient(135deg, #1565C0, #0D47A1);
+  color: white;
+  text-align: center;
+  padding: 50px 20px 40px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  position: relative;
+  overflow: hidden;
+}
+footer::before {
+  content: '🐦🌟🎈🌸🌻🍀🌈🎠🐝🦋';
+  position: absolute;
+  top: 15px; left: 0; right: 0;
+  text-align: center;
+  font-size: 1.8rem;
+  opacity: 0.25;
+  letter-spacing: 8px;
+}
+.f-title { font-family:'Baloo 2',sans-serif; font-size:1.6rem; font-weight:800; margin-bottom:8px; }
+.f-sub   { opacity:0.8; font-size:1rem; font-weight:600; }
+
+@keyframes bounceIn {
+  from { opacity:0; transform:scale(0.5) translateY(-20px); }
+  to   { opacity:1; transform:scale(1) translateY(0); }
+}
+@keyframes slideDown {
+  from { opacity:0; transform:translateY(-30px); }
+  to   { opacity:1; transform:translateY(0); }
+}
+
+@media (max-width: 768px) {
+  header { padding: 40px 16px 60px; }
+  header h1 { font-size: 2rem; }
+  .card-stripe { padding: 24px 24px 20px; }
+  .card-stripe h2 { font-size: 1.6rem; }
+  .card-body { padding: 24px; }
+  .nav-btn { padding: 10px 16px; font-size: 0.95rem; }
+  .groups-grid { grid-template-columns: 1fr 1fr; }
+}
+@media (max-width: 480px) {
+  .nav-btn { width: 100%; justify-content: center; }
+  nav { padding: 20px 16px 16px; }
+}
+</style>
 </head>
-<body>
+<body class="sky-bg">
+
+<div class="clouds">
+  <div class="cloud cloud-1"></div>
+  <div class="cloud cloud-2"></div>
+  <div class="cloud cloud-3"></div>
+</div>
 
 <header>
-    <h1>🐦 Овруцький ЗДО №8 «Ластівка»</h1>
-    <p>Офіційний сайт дитячого садка</p>
-    <!-- Кнопку входу прибрано -->
+  <div class="header-badge">🏡 Місто Овруч · З 2006 року</div>
+  <h1><span class="bird-anim">🐦</span> Овруцький ЗДО №8 «Ластівка»</h1>
+  <p class="subtitle">Офіційний сайт дитячого садка</p>
 </header>
 
-<nav>
-    <button class="nav-btn" data-tab="home">🏠 Головна</button>
-    <button class="nav-btn" data-tab="news">📰 Новини</button>
-    <button class="nav-btn" data-tab="album">📸 Фото</button>
-    <button class="nav-btn" data-tab="groups">👨‍👩‍👧‍👦 Групи</button>
-    <button class="nav-btn" data-tab="schedule">📅 Розклад</button>
-    <button class="nav-btn" data-tab="collective">👩‍🏫 Педколектив</button>
-    <button class="nav-btn" data-tab="inclusive">❤️ Інклюзія</button>
-    <button class="nav-btn" data-tab="statut">📋 Статут</button>
-    <button class="nav-btn" data-tab="orders">📄 Накази</button>
-</nav>
+<div class="ground-strip"></div>
 
-<div class="container">
-    <div class="cards-container">
-        <!-- ГОЛОВНА -->
-        <div id="home" class="card">
-            <h2>🏠 Ласкаво просимо!</h2>
-            <p>Офіційний сайт Овруцького ЗДО №8 «Ластівка» — місце, де кожна дитина отримує турботу, любов та якісну дошкільну освіту.</p>
-            <p><strong>Наша місія:</strong> створення безпечного та комфортного середовища для гармонійного розвитку дітей віком від 1 до 6 років.</p>
-            <div class="info-box">
-                <p><strong>📍 Адреса:</strong> вул. Прикордонна, Овруч</p>
-                <p><strong>📞 Телефон:</strong> (04148) 5-12-34</p>
-                <p><strong>✉️ Email:</strong> lastivka.zdo8@gmail.com</p>
-            </div>
-        </div>
+<div class="main-wrapper">
+  <nav>
+    <button class="nav-btn" data-tab="home"><span class="btn-icon">🏠</span><span class="btn-label">Головна</span></button>
+    <button class="nav-btn" data-tab="news"><span class="btn-icon">📰</span><span class="btn-label">Новини</span></button>
+    <button class="nav-btn" data-tab="album"><span class="btn-icon">📸</span><span class="btn-label">Фото</span></button>
+    <button class="nav-btn" data-tab="groups"><span class="btn-icon">👨‍👩‍👧‍👦</span><span class="btn-label">Групи</span></button>
+    <button class="nav-btn" data-tab="schedule"><span class="btn-icon">📅</span><span class="btn-label">Розклад</span></button>
+    <button class="nav-btn" data-tab="collective"><span class="btn-icon">👩‍🏫</span><span class="btn-label">Педколектив</span></button>
+    <button class="nav-btn" data-tab="inclusive"><span class="btn-icon">❤️</span><span class="btn-label">Інклюзія</span></button>
+    <button class="nav-btn" data-tab="statut"><span class="btn-icon">📋</span><span class="btn-label">Статут</span></button>
+    <button class="nav-btn" data-tab="orders"><span class="btn-icon">📄</span><span class="btn-label">Накази</span></button>
+  </nav>
 
-        <!-- НОВИНИ -->
-        <div id="news" class="card">
-            <h2>📰 Новини та оголошення</h2>
-            <p>Актуальні новини та важлива інформація для батьків:</p>
-            <a class="drive-link" href="https://drive.google.com/drive/folders/1zooffQ541chkyuKTUul2nkPjJDwirvxQ" target="_blank">
-                📁 Новини нашого садочка 
-            </a>
-        </div>
+  <div class="container">
 
-        <!-- ФОТОАЛЬБОМ -->
-        <div id="album" class="card">
-            <h2>📸 Фотоальбом</h2>
-            <p>Фотографії з життя нашого садочка:</p>
-            <a class="drive-link" href="https://drive.google.com/drive/folders/1IknDuijQtf-RrgZ8PtK89K1W2_tWz6xU" target="_blank">
-                📁 Фотоальбом
-            </a>
+    <div id="home" class="card">
+      <div class="card-inner">
+        <div class="card-stripe stripe-home">
+          <h2>🏠 Ласкаво просимо!</h2>
+          <p class="stripe-desc">Офіційний сайт Овруцького ЗДО №8 «Ластівка»</p>
         </div>
-
-        <!-- ГРУПИ -->
-        <div id="groups" class="card">
-            <h2>👨‍👩‍👧‍👦 Групи садочка</h2>
-            <p>Оберіть групу для перегляду матеріалів:</p>
-            <div class="groups-grid">
-                <a class="group-link" href="https://drive.google.com/drive/folders/1JGMSOMT_J2t3BaH-gb9zfTsBa0Mwcit_" target="_blank">🍯 Бджілки</a>
-                <a class="group-link" href="https://drive.google.com/drive/folders/1x4hdq03XGAvSasfasuUZDnglTzIGeAtl" target="_blank">🌈 Веселка</a>
-                <a class="group-link" href="https://drive.google.com/drive/folders/1NniCYxUD-PQG7C_QRuWc7xw02BMgdagk" target="_blank">⭐ Зірочки</a>
-                <a class="group-link" href="https://drive.google.com/drive/folders/1ILclmWrIcnjUO5A0inVl1lFKYr-M0KZ2" target="_blank">💧 Краплинки</a>
-                <a class="group-link" href="https://drive.google.com/drive/folders/1_88DhBgMjTTY9Bnxh-HFlhyIHROHkx5B" target="_blank">🔍 Пізнайко</a>
-                <a class="group-link" href="https://drive.google.com/drive/folders/1IaHJfVHh_g9W55Yc1ZIeGVPBQqsZxdAG" target="_blank">☀️ Сонечко</a>
-                <a class="group-link" href="https://drive.google.com/drive/folders/1cjb4QtNFRAcVbNB62YaHsp0n8L4r8wzg" target="_blank">🌻 Соняшник</a>
-                <a class="group-link" href="https://drive.google.com/drive/folders/16wVHEkqukh9DEyDiaW_QqjnBCH_aWxDn" target="_blank">❓ Чомусики</a>
-            </div>
+        <div class="card-body">
+          <div class="mission-box">
+            <p><strong>Наша місія:</strong> створення безпечного та комфортного середовища для гармонійного розвитку дітей віком від 1 до 6 років. Кожна дитина отримує турботу, любов та якісну дошкільну освіту.</p>
+          </div>
+          <div class="info-grid">
+            <div class="info-tile"><span class="tile-icon">📍</span><div class="tile-label">Адреса</div><div class="tile-value">вул. Прикордонна, Овруч</div></div>
+            <div class="info-tile"><span class="tile-icon">🕐</span><div class="tile-label">Графік роботи</div><div class="tile-value">Пн–Пт 07:30–18:30</div></div>
+          </div>
         </div>
-
-        <!-- РОЗКЛАД -->
-        <div id="schedule" class="card">
-            <h2>📅 Розклад занять</h2>
-            <p>Щоденний розклад та режим дня нашого садочка:</p>
-            <a class="drive-link" href="https://drive.google.com/drive/folders/1WiA4RmGSrRH29CbrXg14df5JtuYd6TeJ" target="_blank">
-                📁 Розклад 
-            </a>
-        </div>
-
-        <!-- ПЕДКОЛЕКТИВ -->
-        <div id="collective" class="card">
-            <h2>👩‍🏫 Педагогічний колектив</h2>
-            <p>Інформація про наших педагогів:</p>
-            <a class="drive-link" href="https://drive.google.com/drive/folders/1Fwu64LsLkIeybCPFTni-_5DgFPvtBMp7" target="_blank">
-                📁 Документи педколективу
-            </a>
-        </div>
-
-        <!-- ІНКЛЮЗІЯ -->
-        <div id="inclusive" class="card">
-            <h2>❤️ Інклюзивна освіта</h2>
-            <p>Документи з інклюзивної освіти нашого садочка:</p>
-            <a class="drive-link" href="https://drive.google.com/drive/folders/10Q-sd76LpOaqeMxjuyNNYUhFwHMz3lRK" target="_blank">
-                📁 Документи з інклюзії
-            </a>
-        </div>
-
-        <!-- СТАТУТ -->
-        <div id="statut" class="card">
-            <h2>📋 Статут</h2>
-            <p>Офіційний статут садочка:</p>
-            <a class="drive-link" href="https://drive.google.com/drive/folders/1fJZhnr-yTZ5Uecl4jdnkuSEDhleSx0dz" target="_blank">
-                📁 Статут
-            </a>
-        </div>
-
-        <!-- НАКАЗИ -->
-        <div id="orders" class="card">
-            <h2>📄 Накази</h2>
-            <p>Накази:</p>
-            <a class="drive-link" href="https://drive.google.com/drive/folders/1ANR6bzU3viTLAgj2NSY-n6JfDlzs_9mS" target="_blank">
-                📁 Накази нашого садочка 
-            </a>
-        </div>
+      </div>
     </div>
+
+    <div id="news" class="card">
+      <div class="card-inner">
+        <div class="card-stripe stripe-news">
+          <h2>📰 Новини та оголошення</h2>
+          <p class="stripe-desc">Актуальні новини та важлива інформація для батьків</p>
+        </div>
+        <div class="card-body">
+          <a class="drive-btn btn-yellow" href="https://drive.google.com/drive/folders/1zooffQ541chkyuKTUul2nkPjJDwirvxQ" target="_blank">
+            📁 Відкрити новини садочка <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="album" class="card">
+      <div class="card-inner">
+        <div class="card-stripe stripe-album">
+          <h2>📸 Фотоальбом</h2>
+          <p class="stripe-desc">Фотографії з яскравого життя нашого садочка</p>
+        </div>
+        <div class="card-body">
+          <a class="drive-btn btn-pink" href="https://drive.google.com/drive/folders/1IknDuijQtf-RrgZ8PtK89K1W2_tWz6xU" target="_blank">
+            📁 Відкрити фотоальбом <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="groups" class="card">
+      <div class="card-inner">
+        <div class="card-stripe stripe-groups">
+          <h2>👨‍👩‍👧‍👦 Групи садочка</h2>
+          <p class="stripe-desc">Оберіть групу для перегляду матеріалів</p>
+        </div>
+        <div class="card-body">
+          <div class="groups-grid">
+            <a class="group-card g-bees"      href="https://drive.google.com/drive/folders/1JGMSOMT_J2t3BaH-gb9zfTsBa0Mwcit_" target="_blank"><span class="g-icon">🍯</span>Бджілки</a>
+            <a class="group-card g-rainbow"   href="https://drive.google.com/drive/folders/1x4hdq03XGAvSasfasuUZDnglTzIGeAtl" target="_blank"><span class="g-icon">🌈</span>Веселка</a>
+            <a class="group-card g-stars"     href="https://drive.google.com/drive/folders/1NniCYxUD-PQG7C_QRuWc7xw02BMgdagk" target="_blank"><span class="g-icon">⭐</span>Зірочки</a>
+            <a class="group-card g-drops"     href="https://drive.google.com/drive/folders/1ILclmWrIcnjUO5A0inVl1lFKYr-M0KZ2" target="_blank"><span class="g-icon">💧</span>Краплинки</a>
+            <a class="group-card g-piznaiko"  href="https://drive.google.com/drive/folders/1_88DhBgMjTTY9Bnxh-HFlhyIHROHkx5B" target="_blank"><span class="g-icon">🔍</span>Пізнайко</a>
+            <a class="group-card g-sun"       href="https://drive.google.com/drive/folders/1IaHJfVHh_g9W55Yc1ZIeGVPBQqsZxdAG" target="_blank"><span class="g-icon">☀️</span>Сонечко</a>
+            <a class="group-card g-sunflower" href="https://drive.google.com/drive/folders/1cjb4QtNFRAcVbNB62YaHsp0n8L4r8wzg" target="_blank"><span class="g-icon">🌻</span>Соняшник</a>
+            <a class="group-card g-why"       href="https://drive.google.com/drive/folders/16wVHEkqukh9DEyDiaW_QqjnBCH_aWxDn" target="_blank"><span class="g-icon">❓</span>Чомусики</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="schedule" class="card">
+      <div class="card-inner">
+        <div class="card-stripe stripe-schedule">
+          <h2>📅 Розклад занять</h2>
+          <p class="stripe-desc">Щоденний розклад та режим дня нашого садочка</p>
+        </div>
+        <div class="card-body">
+          <a class="drive-btn btn-purple" href="https://drive.google.com/drive/folders/1WiA4RmGSrRH29CbrXg14df5JtuYd6TeJ" target="_blank">
+            📁 Відкрити розклад <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="collective" class="card">
+      <div class="card-inner">
+        <div class="card-stripe stripe-collective">
+          <h2>👩‍🏫 Педагогічний колектив</h2>
+          <p class="stripe-desc">Інформація про наших педагогів</p>
+        </div>
+        <div class="card-body">
+          <a class="drive-btn btn-teal" href="https://drive.google.com/drive/folders/1Fwu64LsLkIeybCPFTni-_5DgFPvtBMp7" target="_blank">
+            📁 Документи педколективу <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="inclusive" class="card">
+      <div class="card-inner">
+        <div class="card-stripe stripe-inclusive">
+          <h2>❤️ Інклюзивна освіта</h2>
+          <p class="stripe-desc">Документи з інклюзивної освіти нашого садочка</p>
+        </div>
+        <div class="card-body">
+          <a class="drive-btn btn-orange" href="https://drive.google.com/drive/folders/10Q-sd76LpOaqeMxjuyNNYUhFwHMz3lRK" target="_blank">
+            📁 Документи з інклюзії <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="statut" class="card">
+      <div class="card-inner">
+        <div class="card-stripe stripe-statut">
+          <h2>📋 Статут</h2>
+          <p class="stripe-desc">Офіційний статут садочка</p>
+        </div>
+        <div class="card-body">
+          <a class="drive-btn btn-navy" href="https://drive.google.com/drive/folders/1fJZhnr-yTZ5Uecl4jdnkuSEDhleSx0dz" target="_blank">
+            📁 Відкрити статут <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="orders" class="card">
+      <div class="card-inner">
+        <div class="card-stripe stripe-orders">
+          <h2>📄 Накази</h2>
+          <p class="stripe-desc">Накази нашого садочка</p>
+        </div>
+        <div class="card-body">
+          <a class="drive-btn btn-forest" href="https://drive.google.com/drive/folders/1ANR6bzU3viTLAgj2NSY-n6JfDlzs_9mS" target="_blank">
+            📁 Відкрити накази <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </div>
 
 <footer>
-    <p>© 2026 Овруцький ЗДО №8 «Ластівка» Овруцької міської ради.</p>
-    <p class="footer-sub">Офіційний сайт садочку</p>
+  <div class="f-title">🐦 Овруцький ЗДО №8 «Ластівка»</div>
+  <div class="f-sub">© 2026 · Овруцька міська рада · Офіційний сайт садочка</div>
 </footer>
 
 <script>
-    // Функція перемикання вкладок
-    function showTab(tabId) {
-        // Приховуємо всі картки
-        document.querySelectorAll('.card').forEach(card => {
-            card.classList.remove('active');
-        });
-        
-        // Показуємо вибрану картку
-        const selectedCard = document.getElementById(tabId);
-        if (selectedCard) {
-            selectedCard.classList.add('active');
-        }
-        
-        // Оновлюємо активний стан кнопок
-        document.querySelectorAll('.nav-btn').forEach(btn => {
-            btn.classList.remove('active');
-            if (btn.dataset.tab === tabId) {
-                btn.classList.add('active');
-            }
-        });
-    }
+  function showTab(tabId) {
+    document.querySelectorAll('.card').forEach(c => c.classList.remove('active'));
+    document.querySelectorAll('.nav-btn').forEach(b => b.classList.remove('active'));
+    const card = document.getElementById(tabId);
+    if (card) card.classList.add('active');
+    const btn = document.querySelector('[data-tab="' + tabId + '"]');
+    if (btn) btn.classList.add('active');
+  }
 
-    // Додаємо обробники подій на кнопки навігації
-    document.addEventListener('DOMContentLoaded', function() {
-        const navButtons = document.querySelectorAll('.nav-btn');
-        navButtons.forEach(btn => {
-            btn.addEventListener('click', function() {
-                const tabId = this.dataset.tab;
-                showTab(tabId);
-                // Плавний скрол до контенту
-                document.querySelector('.container').scrollIntoView({ behavior: 'smooth' });
-            });
-        });
-
-        // Показуємо головну вкладку за замовчуванням
-        showTab('home');
-
-        // Маленька радісна консоль
-        console.log('🐣 Ластівка вітає! Сайт працює ❤️');
+  document.addEventListener('DOMContentLoaded', function () {
+    document.querySelectorAll('.nav-btn').forEach(btn => {
+      btn.addEventListener('click', function () {
+        showTab(this.dataset.tab);
+        document.querySelector('.main-wrapper').scrollIntoView({ behavior: 'smooth' });
+      });
     });
+    showTab('home');
+  });
 </script>
-
-<!-- Видалено весь код модального вікна та логіку входу -->
 </body>
 </html>
