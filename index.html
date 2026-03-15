@@ -105,24 +105,6 @@ header {
   padding: 60px 20px 80px;
 }
 
-.header-badge {
-  display: inline-flex;
-  align-items: center;
-  gap: 8px;
-  background: var(--sun);
-  color: #7B3F00;
-  font-family: 'Baloo 2', sans-serif;
-  font-size: 0.9rem;
-  font-weight: 700;
-  letter-spacing: 0.05em;
-  text-transform: uppercase;
-  padding: 6px 18px;
-  border-radius: var(--pill-radius);
-  margin-bottom: 20px;
-  box-shadow: 0 4px 0 rgba(255,143,0,0.3);
-  animation: bounceIn 0.8s cubic-bezier(0.68,-0.55,0.265,1.55) both;
-}
-
 header h1 {
   font-family: 'Baloo 2', sans-serif;
   font-size: clamp(2.2rem, 6vw, 4.2rem);
@@ -277,6 +259,7 @@ nav {
 .stripe-inclusive { background: linear-gradient(135deg, #FFAB91, #BF360C); }
 .stripe-statut    { background: linear-gradient(135deg, #90CAF9, #1565C0); }
 .stripe-orders    { background: linear-gradient(135deg, #A5D6A7, #1B5E20); }
+.stripe-atest     { background: linear-gradient(135deg, #FFCC80, #E65100); }
 
 .card-stripe h2 {
   font-family: 'Baloo 2', sans-serif;
@@ -375,6 +358,8 @@ nav {
 .btn-navy:hover   { box-shadow:0 12px 0 rgba(10,60,150,.3),0 8px 30px rgba(21,101,192,.4); }
 .btn-forest { background: linear-gradient(135deg,#A5D6A7,#1B5E20); box-shadow:0 6px 0 rgba(10,60,20,.4),0 4px 20px rgba(27,94,32,.3); }
 .btn-forest:hover { box-shadow:0 12px 0 rgba(10,60,20,.3),0 8px 30px rgba(27,94,32,.4); }
+.btn-deeporange { background: linear-gradient(135deg,#FFCC80,#E65100); box-shadow:0 6px 0 rgba(150,40,0,.4),0 4px 20px rgba(230,81,0,.3); }
+.btn-deeporange:hover { box-shadow:0 12px 0 rgba(150,40,0,.3),0 8px 30px rgba(230,81,0,.4); }
 
 .groups-grid {
   display: grid;
@@ -481,7 +466,6 @@ footer::before {
 </div>
 
 <header>
-  <div class="header-badge">🏡 Місто Овруч · З 2006 року</div>
   <h1><span class="bird-anim">🐦</span> Овруцький ЗДО №8 «Ластівка»</h1>
   <p class="subtitle">Офіційний сайт дитячого садка</p>
 </header>
@@ -497,6 +481,7 @@ footer::before {
     <button class="nav-btn" data-tab="schedule"><span class="btn-icon">📅</span><span class="btn-label">Розклад</span></button>
     <button class="nav-btn" data-tab="collective"><span class="btn-icon">👩‍🏫</span><span class="btn-label">Педколектив</span></button>
     <button class="nav-btn" data-tab="inclusive"><span class="btn-icon">❤️</span><span class="btn-label">Інклюзія</span></button>
+    <button class="nav-btn" data-tab="atest"><span class="btn-icon">🎓</span><span class="btn-label">Атестація</span></button>
     <button class="nav-btn" data-tab="statut"><span class="btn-icon">📋</span><span class="btn-label">Статут</span></button>
     <button class="nav-btn" data-tab="orders"><span class="btn-icon">📄</span><span class="btn-label">Накази</span></button>
   </nav>
@@ -515,7 +500,6 @@ footer::before {
           </div>
           <div class="info-grid">
             <div class="info-tile"><span class="tile-icon">📍</span><div class="tile-label">Адреса</div><div class="tile-value">вул. Прикордонна, Овруч</div></div>
-            <div class="info-tile"><span class="tile-icon">🕐</span><div class="tile-label">Графік роботи</div><div class="tile-value">Пн–Пт 07:30–18:30</div></div>
           </div>
         </div>
       </div>
@@ -607,6 +591,20 @@ footer::before {
         <div class="card-body">
           <a class="drive-btn btn-orange" href="https://drive.google.com/drive/folders/10Q-sd76LpOaqeMxjuyNNYUhFwHMz3lRK" target="_blank">
             📁 Документи з інклюзії <span class="btn-arrow">→</span>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="atest" class="card">
+      <div class="card-inner">
+        <div class="card-stripe stripe-atest">
+          <h2>🎓 Атестація</h2>
+          <p class="stripe-desc">Матеріали атестації педагогічних працівників</p>
+        </div>
+        <div class="card-body">
+          <a class="drive-btn btn-deeporange" href="https://drive.google.com/drive/folders/1lQD4YsBpRtvemJlvn5xkUHF96TktZL-K" target="_blank">
+            📁 Відкрити матеріали атестації <span class="btn-arrow">→</span>
           </a>
         </div>
       </div>
